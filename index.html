@@ -3,16 +3,19 @@
 <head>
     <title>Binary converter</title>
     <script src="funksjoner.js"></script>
+    <link rel="stylesheet" type="text/css" href="index.css">
 </head>
 <body>
+<div id="container">
+    <h1>Binary to decimal converter</h1>
+    <form>
+        Binary: <input type="number" id="binaert" name="binaert"/><br/>
+        <input type="button" id="butt1" onclick="bin2dec()" value="Convert"/>
+    </form>
 
-<h1>Binary to decimal converter</h1>
-<form>
-    Binary: <input type="number" id="binaert" name="binaert"/><br/>
-    <input type="button" onclick="bin2dec()" value="Convert"/>
-</form>
+    <p id="resultat"></p>
+</div>
 
-<p id="resultat"></p>
 
 
 </body>
